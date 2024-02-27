@@ -35,7 +35,7 @@ Dependendo da sua escolha de implantação (microk8s, k3s ou EKS da AWS), siga a
                   value: wordpress
                 ports:
                 - containerPort: 3306
-    ## 2. Crie um arquivo de manifesto para o Service do MySQL:
+   ## 2. Crie um arquivo de manifesto para o Service do MySQL:
     
         apiVersion: v1
         kind: Service
@@ -50,7 +50,7 @@ Dependendo da sua escolha de implantação (microk8s, k3s ou EKS da AWS), siga a
             port: 3306
             targetPort: 3306
     
-    ## 3. Aplique os manifestos:
+  ## 3. Aplique os manifestos:
     
         kubectl apply -f mysql-deployment.yaml
         kubectl apply -f mysql-service.yaml
